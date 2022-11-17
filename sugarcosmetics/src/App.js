@@ -5,7 +5,7 @@ function App() {
 
 
 
-    <h1>Suggar Cosmetciss</h1>
+    <h1>Cosmetciss</h1>
   </div>;
 }
 
