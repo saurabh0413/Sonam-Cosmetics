@@ -76,8 +76,8 @@ export  function Navbar() {
                   </Center>
                   <br />
                   <MenuDivider />
-                  <MenuItem>Your Servers</MenuItem>
-                  <MenuItem>Account Settings</MenuItem>
+                  <MenuItem>Cart</MenuItem>
+                  <MenuItem>Wishlist</MenuItem>
                   <MenuItem>Logout</MenuItem>
                 </MenuList>
               </Menu>
