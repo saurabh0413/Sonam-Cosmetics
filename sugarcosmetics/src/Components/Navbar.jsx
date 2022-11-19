@@ -3,40 +3,17 @@ import {
   Box,
   Flex,
   Avatar,
-  Link,
+  Input,
   Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
-  useDisclosure,
-  useColorModeValue,
-  Stack,
-  useColorMode,
-  Center,
+  InputGroup,
+  InputRightElement,
 } from '@chakra-ui/react';
-// import { MoonIcon, SunIcon } from '@chakra-ui/icons';
-// const NavLink = ({ children }: { children: ReactNode }) => (
-//   <Link
-//     px={2}
-//     py={1}
-//     rounded={'md'}
-//     _hover={{
-//       textDecoration: 'none',
-//       bg: useColorModeValue('gray.200', 'gray.700'),
-//     }}
-//     href={'#'}>
-//     {children}
-//   </Link>
-// );
 
 export  function Navbar() {
-  const { colorMode, toggleColorMode } = useColorMode();
-  const { isOpen, onOpen, onClose } = useDisclosure();
+ 
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+      <Box bg={"black"} px={4} color='white'>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <Box>
           <Avatar
@@ -45,45 +22,39 @@ export  function Navbar() {
                   />
             
           </Box>
+          <Box>
 
-          <Flex alignItems={'center'}>
-            <Stack direction={'row'} spacing={7}>
-              
+{/* <Input htmlSize={80} width='auto' />
+<Button color={"black"} bg={"white"}  marginTop="-7px">🍳 Search</Button> */}
 
-              <Menu>
-                <MenuButton
-                  as={Button}
-                  rounded={'full'}
-                  variant={'link'}
-                  cursor={'pointer'}
-                  minW={0}>
-                  <Avatar
-                    size={'sm'}
-                    src={'https://avatars.dicebear.com/api/male/username.svg'}
-                  />
-                </MenuButton>
-                <MenuList alignItems={'center'}>
-                  <br />
-                  <Center>
-                    <Avatar
-                      size={'2xl'}
-                      src={'https://avatars.dicebear.com/api/male/username.svg'}
-                    />
-                  </Center>
-                  <br />
-                  <Center>
-                    <p>Username</p>
-                  </Center>
-                  <br />
-                  <MenuDivider />
-                  <MenuItem>Cart</MenuItem>
-                  <MenuItem>Wishlist</MenuItem>
-                  <MenuItem>Logout</MenuItem>
-                </MenuList>
-              </Menu>
-            </Stack>
+
+
+<InputGroup >
+      <Input
+        pr='4.5rem'
+        
+        placeholder='Try Liquiq Lipstick'
+      />
+      <InputRightElement width='4.5rem'>
+        <Button   color={"black"} bg={"white"}>
+        🍳 Search
+        </Button>
+      </InputRightElement>
+    </InputGroup>
+</Box>
+          
+   
+          <Box>Login/Register</Box>
+
+          <Flex h={26} alignItems={'center'} justifyContent={'space-between'} gap="25px">
+          <Box>🤍</Box>
+          <Box>👜</Box>
+          <Box>☀</Box>
           </Flex>
+        
         </Flex>
+
+        
       </Box>
     </>
   );
