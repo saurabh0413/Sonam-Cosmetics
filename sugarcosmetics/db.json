@@ -59,7 +59,7 @@
         "https://cdn.shopify.com/s/files/1/0906/2558/products/2_38019f47-c091-4391-acd2-07b452115a47.jpg?v=1652976031",
         "https://cdn.shopify.com/s/files/1/0906/2558/products/4_354b55b4-ab22-4bda-b4e7-5eccc522ad15.jpg?v=1652942969"
       ],
-      "feature": "primers",
+      "feature": "primer",
       "formulation": "cream",
       "concern": "Brightening",
       "rating": "4.3(174)"
@@ -75,7 +75,7 @@
         "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-face-fwd-primer-stick-14330457030739.jpg?v=1619116600",
         "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-face-fwd-primer-stick-13824753795155.jpg?v=1619116604"
       ],
-      "feature": "primers",
+      "feature": "primer",
       "formulation": "cream",
       "concern": "Brightening",
       "rating": "4.6(74)"
@@ -91,7 +91,7 @@
         "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-the-most-eligiblur-smoothing-primer-28122626195539.jpg?v=1619115334",
         "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-the-most-eligiblur-smoothing-primer-13607201538131.jpg?v=1619115337"
       ],
-      "feature": "primers",
+      "feature": "primer",
       "formulation": "cream",
       "concern": "Brightening",
       "rating": "4.3(38)"
@@ -107,7 +107,7 @@
         "https://cdn.shopify.com/s/files/1/0906/2558/products/2_689d2f98-191e-4e1b-948e-39dca576a8ab.jpg?v=1652942992",
         "https://cdn.shopify.com/s/files/1/0906/2558/products/4_f1c8aafe-4f51-44a7-aa7d-2336f084b9a1.jpg?v=1652943004"
       ],
-      "feature": "primers",
+      "feature": "primer",
       "formulation": "cream",
       "concern": "Brightening",
       "rating": "4.8(389)"
@@ -123,7 +123,7 @@
         "https://cdn.shopify.com/s/files/1/0906/2558/products/2_1268d25b-dcf4-43f8-9fd8-ee83b33e0dc0.jpg?v=1652942866",
         "https://cdn.shopify.com/s/files/1/0906/2558/products/4_46dace73-190c-4634-8859-dab9dfb5ba85.jpg?v=1652942883"
       ],
-      "feature": "primers",
+      "feature": "primer",
       "formulation": "cream",
       "concern": "Brightening",
       "rating": "5.0(9)"
@@ -139,7 +139,7 @@
         "https://cdn.shopify.com/s/files/1/0906/2558/products/SUGAR-Prime-Sublime-Primer---Powered-By-Images1_f299c073-7bc2-48b4-a705-77932c05815c.jpg?v=1666886774",
         "https://cdn.shopify.com/s/files/1/0906/2558/products/SUGAR-Prime-Sublime-Primer---Powered-By-Images2_255d2402-5024-4388-b331-ce17b2a9583b.jpg?v=1666886777"
       ],
-      "feature": "primers",
+      "feature": "primer",
       "formulation": "cream",
       "concern": "Brightening",
       "rating": "5.0(87)"
@@ -332,7 +332,8 @@
   ],
   "formulation":"Pressed Powder",
   "concern":"oil control",
-  "rating": "4.0(187)"
+  "rating": "4.0(187)",
+  "feature":"stick"
 },
 {
   "type": "palette",
@@ -347,7 +348,8 @@
   ],
   "formulation":"Pressed Powder",
   "concern":"oil control",
-  "rating": "5.0(9)"
+  "rating": "5.0(9)",
+  "feature":"stick"
 },
 {
   "type": "palette",
@@ -362,7 +364,8 @@
   ],
   "formulation":"Pressed Powder",
   "concern":"oil control",
-  "rating": "4.8(900)"
+  "rating": "4.8(900)",
+  "feature":"stick"
 },
 {
   "type": "value sets",
@@ -376,7 +379,8 @@
   ],
   "formulation":"Liquid",
   "concern":"Blurring",
-  "rating": "4.8(900)"
+  "rating": "4.8(900)",
+  "feature":"stick"
 },
 {
   "type": "value sets",
@@ -391,7 +395,8 @@
   ],
   "formulation":"Liquid",
   "concern":"Blurring",
-  "rating": "4.9(28)"
+  "rating": "4.9(28)",
+  "feature":"stick"
 }
   ]
 }
