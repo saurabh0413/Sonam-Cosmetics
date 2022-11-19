@@ -31,12 +31,12 @@ export  function Navbar() {
 
 <InputGroup >
       <Input
-        pr='4.5rem'
+        pr='24rem'
         
         placeholder='Try Liquiq Lipstick'
       />
       <InputRightElement width='4.5rem'>
-        <Button   color={"black"} bg={"white"}>
+        <Button   color={"black"} bg={"white"} padding="-80px" marginLeft={"-30px"}>
         🍳 Search
         </Button>
       </InputRightElement>
