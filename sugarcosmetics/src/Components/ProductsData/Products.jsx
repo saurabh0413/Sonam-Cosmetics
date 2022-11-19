@@ -1,7 +1,7 @@
 import React from "react";
 import Filter from "./Filter";
 import ProductContent from "./ProductContent";
-import { Flex, Spacer } from "@chakra-ui/react";
+import { Flex} from "@chakra-ui/react";
 import styles from "./Products.module.css";
 const Products = () => {
   return (

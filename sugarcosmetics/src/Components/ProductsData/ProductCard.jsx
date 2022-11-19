@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Box, Badge, Image, Text, HStack } from "@chakra-ui/react";
-import { HamburgerIcon, StarIcon } from "@chakra-ui/icons";
+import { Box, Image, Text, HStack } from "@chakra-ui/react";
+import { HamburgerIcon } from "@chakra-ui/icons";
 import Cartbutton from "./Cartbutton";
 const ProductCard = ({ data }) => {
   return (
