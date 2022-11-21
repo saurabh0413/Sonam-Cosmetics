@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { Footer } from './Components/Footer';
 import {Navbar} from './Components/Navbar';
 import SecondNabar from './Components/SecondNabar';
 
@@ -8,6 +9,8 @@ function App() {
     <>
    <Navbar/>
    <SecondNabar/>
+
+   <Footer/>
     </>
   
   );
