@@ -93,8 +93,8 @@ const Filter = () => {
     }
   }, [category, setSearchParams, sortBy]);
   return (
-    <div style={{ border: "2px solid red", width: "25%" }}>
-      <Box w={300} ml={10} mb={10}>
+    <Box minW="200px" w="300px" border="1px solid red" >
+      <Box   border="1px solid red">
         <Accordion allowToggle>
           <AccordionItem>
             <h2>
@@ -112,7 +112,6 @@ const Filter = () => {
                   direction={["column", "row"]}
                   align="flex-start"
                 >
-                
                   <input type="checkbox" />
                   <label>Relevance</label>
                   <input
@@ -120,7 +119,7 @@ const Filter = () => {
                     value="asc"
                     onChange={handleSort}
                     name="sortBy"
-                     defaultChecked={sortBy == "asc"}
+                    defaultChecked={sortBy == "asc"}
                   />
                   <label>Ascending</label>
                   <input
@@ -138,7 +137,7 @@ const Filter = () => {
         </Accordion>
       </Box>
 
-      <Box w={300} ml={10}>
+      <Box ml={10} >
         <Accordion allowToggle>
           {data.map((item) => {
             return (
@@ -151,7 +150,7 @@ const Filter = () => {
           })}
         </Accordion>
       </Box>
-    </div>
+    </Box>
   );
 };
 
