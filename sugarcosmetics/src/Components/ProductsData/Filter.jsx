@@ -65,9 +65,10 @@ const Filter = () => {
   ];
   const [searchParams, setSearchParams] = useSearchParams();
   const initialGenreparams = searchParams.getAll("type");
-
+  const initialSortparams = searchParams.get("sortBy");
   const [category, setCategory] = useState(initialGenreparams || []);
 
+  const [sortBy, setSortBy] = useState(initialSortparams || "");
   const handleChange = (e) => {
     const checkedData = e.target.value;
     const new_category = [...category];
@@ -79,17 +80,21 @@ const Filter = () => {
     }
     setCategory(new_category);
   };
+
+  const handleSort = (e) => {
+    setSortBy(e.target.value);
+  };
   useEffect(() => {
-    console.log("filter");
-    if (category) {
+    if (category || sortBy) {
       const params = {};
       category && (params.type = category);
+      sortBy && (params.sortBy = sortBy);
       setSearchParams(params);
     }
-  }, [category, setSearchParams]);
+  }, [category, setSearchParams, sortBy]);
   return (
-    <div style={{ border: "2px solid red", width: "25%" }}>
-      <Box w={300} ml={10} mb={10}>
+    <Box minW="200px" w="300px" border="1px solid red" >
+      <Box   border="1px solid red">
         <Accordion allowToggle>
           <AccordionItem>
             <h2>
@@ -107,9 +112,24 @@ const Filter = () => {
                   direction={["column", "row"]}
                   align="flex-start"
                 >
-                  <Checkbox value="Relevance">Relevance</Checkbox>
-                  <Checkbox value="High">Price: High to Low</Checkbox>
-                  <Checkbox value="Low">Price: Low to High</Checkbox>
+                  <input type="checkbox" />
+                  <label>Relevance</label>
+                  <input
+                    type="radio"
+                    value="asc"
+                    onChange={handleSort}
+                    name="sortBy"
+                    defaultChecked={sortBy == "asc"}
+                  />
+                  <label>Ascending</label>
+                  <input
+                    type="radio"
+                    value="desc"
+                    onChange={handleSort}
+                    name="sortBy"
+                    defaultChecked={sortBy == "desc"}
+                  />
+                  <label>Descending</label>
                 </VStack>
               </CheckboxGroup>
             </AccordionPanel>
@@ -117,14 +137,20 @@ const Filter = () => {
         </Accordion>
       </Box>
 
-      <Box w={300} ml={10}>
+      <Box ml={10} >
         <Accordion allowToggle>
           {data.map((item) => {
-            return <AccordCompo item={item} handleChange={handleChange} category={category} />;
+            return (
+              <AccordCompo
+                item={item}
+                handleChange={handleChange}
+                category={category}
+              />
+            );
           })}
         </Accordion>
       </Box>
-    </div>
+    </Box>
   );
 };
 

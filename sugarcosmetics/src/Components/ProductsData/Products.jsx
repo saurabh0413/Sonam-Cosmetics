@@ -1,7 +1,7 @@
 import React from "react";
 import Filter from "./Filter";
 import ProductContent from "./ProductContent";
-import { Flex} from "@chakra-ui/react";
+import { Flex, Stack, Wrap } from "@chakra-ui/react";
 import styles from "./Products.module.css";
 const Products = () => {
   return (
@@ -13,12 +13,16 @@ const Products = () => {
           className={styles.img1}
         />
       </div>
-      <div style={{ width: "100%", marginTop: "1%" }}>
-        <Flex justify="space-between">
-          <Filter />
-          <ProductContent />
-        </Flex>
-      </div>
+
+      <Stack
+        justify="space-between"
+        maxW="1400px"
+        margin="auto"
+        direction={{ base: "column",md:"row" }} //
+      >
+        <Filter />
+        <ProductContent />
+      </Stack>
     </div>
   );
 };

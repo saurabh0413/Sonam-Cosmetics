@@ -3,8 +3,11 @@ import React from "react";
 import { Box, Image, Text, HStack } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import Cartbutton from "./Cartbutton";
+import { Link } from "react-router-dom";
 const ProductCard = ({ data }) => {
   return (
+    <Link to={`/products/${data.name}`}>
+   
     <div>
       {" "}
       <Box
@@ -50,6 +53,7 @@ const ProductCard = ({ data }) => {
         </Box>
       </Box>
     </div>
+    </Link>
   );
 };
 

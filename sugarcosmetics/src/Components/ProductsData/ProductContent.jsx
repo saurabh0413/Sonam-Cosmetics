@@ -1,6 +1,6 @@
 import React from "react";
 import ProductCard from "./ProductCard";
-import { Grid } from "@chakra-ui/react";
+import { Grid, SimpleGrid, Wrap } from "@chakra-ui/react";
 import { useContext } from "react";
 import { ProdContext } from "../../context/productContext";
 import { useEffect } from "react";
@@ -22,7 +22,6 @@ const ProductContent = () => {
     await axios
       .get("http://localhost:8080/products", queryParams)
       .then((res) => {
-        
         dispatch(productSuccess(res.data));
       })
       .catch(() => {
@@ -33,11 +32,13 @@ const ProductContent = () => {
   //   getData();
   // }, []);
   useEffect(() => {
-    console.log("product")
-    if (location) {
+    if (location || state.products.length == 0) {
+      const sortBy = searchParams.get("sortBy");
       const queryParams = {
         params: {
           type: searchParams.getAll("type"),
+          _sort: sortBy && "actual_price",
+          _order: sortBy,
         },
       };
       getData(queryParams);
@@ -45,11 +46,11 @@ const ProductContent = () => {
   }, [location.search]);
   return (
     <div style={{ width: "70%" }}>
-      <Grid templateColumns="repeat(3, 1fr)" gap={3}>
+      <SimpleGrid spacing={5}  columns={[1,2,2,3]}>
         {state.products.map((item) => {
           return <ProductCard data={item} />;
         })}
-      </Grid>
+      </SimpleGrid>
     </div>
   );
 };
