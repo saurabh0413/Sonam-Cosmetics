@@ -49,7 +49,7 @@ const Singleproduct = () => {
       <VStack
         align="revert-layer"
         spacing={{ base: "none", sm: 3, xl: 5 }}
-        w={{ base: "100%", sm: "200px", xl: "500px" }}
+        w={{ base: "100%", sm: "200px", md:"400px",xl: "500px" }}
       >
         <Text>{new_product.name}</Text>
         <Text>{new_product.price}</Text>
