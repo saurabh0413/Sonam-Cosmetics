@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
 
+import { Box } from "@chakra-ui/react";
 const Homepage = () => {
-  return (
-    <div>Homepage</div>
-  )
-}
+  return <Box>Homepage</Box>;
+};
 
-export default Homepage
+export default Homepage;

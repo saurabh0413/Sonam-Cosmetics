@@ -40,12 +40,11 @@ const Singleproduct = () => {
       <HStack spacing={10}>
         <VStack spacing={5}>
           {new_product.images.map((img) => {
-            return <Image w="50px" src={img} />;
+            return <Image w="50px" src={img} onClick={()=> SetCenterimg(img)} />;
           })}
         </VStack>
         <Image src={centerimg} w="300px" minW="80px" />
       </HStack>
-
       <VStack
         align="revert-layer"
         spacing={{ base: "none", sm: 3, xl: 5 }}
@@ -70,6 +69,7 @@ const Singleproduct = () => {
           </HStack>
         </Box>
       </VStack>
+      
     </Stack>
   );
 };
