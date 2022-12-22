@@ -10,7 +10,7 @@ import {
   productFailure,
   productSuccess,
   productRequest,
-} from "../../reducers/action";
+} from "../../reducers/product/action";
 
 const ProductContent = () => {
   const location = useLocation();
@@ -46,7 +46,7 @@ const ProductContent = () => {
   }, [location.search]);
   return (
     <div style={{ width: "70%" }}>
-      <SimpleGrid spacing={5}  columns={[1,2,2,3]}>
+      <SimpleGrid spacing={5} columns={[1, 2, 2, 3]}>
         {state.products.map((item) => {
           return <ProductCard data={item} />;
         })}

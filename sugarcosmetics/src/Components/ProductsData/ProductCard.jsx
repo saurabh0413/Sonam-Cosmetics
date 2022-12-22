@@ -7,17 +7,15 @@ import { Link } from "react-router-dom";
 const ProductCard = ({ data }) => {
   return (
     <Link to={`/products/${data.name}`}>
-   
-    <div>
-      {" "}
       <Box
-        width="90%"
+        width="80%"
         borderWidth="1px"
         borderRadius="lg"
         overflow="hidden"
         // border="2px solid red"
-        h="400px"
+        h="450px"
         shadow="0 2px 5px rgb(0 0 0 / 10%)"
+        bg={"white"}
       >
         <Image src={data.images[0]} h="200px" m="auto" />
 
@@ -52,7 +50,6 @@ const ProductCard = ({ data }) => {
           </HStack>
         </Box>
       </Box>
-    </div>
     </Link>
   );
 };
