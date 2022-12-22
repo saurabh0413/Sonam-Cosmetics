@@ -13,13 +13,13 @@ root.render(
   // <React.StrictMode>
 
   <ProductContext>
-    <BrowserRouter>
-      <ChakraProvider>
-        <CartContext>
+    <CartContext>
+      <BrowserRouter>
+        <ChakraProvider>
           <App />
-        </CartContext>
-      </ChakraProvider>
-    </BrowserRouter>
+        </ChakraProvider>
+      </BrowserRouter>
+    </CartContext>
   </ProductContext>
 
   // </React.StrictMode>

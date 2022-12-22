@@ -1,14 +1,21 @@
-import * as types from "./actionTypes"
-const initialData = {
+import * as types from "./actionTypes";
+export const initialData = {
   cart: [],
+  total: "",
 };
 
 function cartReducer(oldState = initialData, action) {
-  const { type, action } = action;
-  switch(type){
+  const { type, payload } = action;
+
+  switch (type) {
+    case types.GET_CART_REQUEST:
+      return {
+        ...oldState,
+        cart: payload,
+      };
     default:
-        return oldState
+      return oldState;
   }
 }
 
-export default cartReducer
+export default cartReducer;

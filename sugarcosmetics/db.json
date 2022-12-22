@@ -1,6 +1,7 @@
 {
   "products": [
     {
+      "id": 1,
       "type": "primers",
       "name": "SUGAR Prime Sublime Primer - Brightening",
       "price": "₹499.00",
@@ -17,6 +18,7 @@
       "rating": "4.8(274)"
     },
     {
+      "id": 2,
       "type": "primers",
       "name": "Mettle Priming Balm",
       "price": "₹1099.00",
@@ -33,6 +35,7 @@
       "rating": "4.8(274)"
     },
     {
+      "id": 3,
       "type": "primers",
       "name": "Base Of Glory Pore Minimizing Primer",
       "price": "₹799.00",
@@ -49,6 +52,7 @@
       "rating": "4.8(274)"
     },
     {
+      "id": 4,
       "type": "primers",
       "name": "The Most Eligiblur Correcting Primer - 02 Onward Orange (Orange)",
       "price": "₹799.00",
@@ -65,6 +69,7 @@
       "rating": "4.3(174)"
     },
     {
+      "id": 5,
       "type": "primers",
       "name": "Face Fwd  Primer Stick",
       "price": "₹799.00",
@@ -81,6 +86,7 @@
       "rating": "4.6(74)"
     },
     {
+      "id": 6,
       "type": "primers",
       "name": "The Most Eligiblur Smoothing Primer",
       "price": "₹849.00",
@@ -97,6 +103,7 @@
       "rating": "4.3(38)"
     },
     {
+      "id": 7,
       "type": "primers",
       "name": "The Most Eligiblur Correcting Primer - 03 Jade Jockey (Green)",
       "price": "₹649.00",
@@ -113,6 +120,7 @@
       "rating": "4.8(389)"
     },
     {
+      "id": 8,
       "type": "primers",
       "name": "The Most Eligiblur Correcting Primer - 01 Peach Precedent (Peach)",
       "price": "₹549.00",
@@ -129,6 +137,7 @@
       "rating": "5.0(9)"
     },
     {
+      "id": 9,
       "type": "primers",
       "name": "Prime Sublime Depuffing Primer",
       "price": "₹489.00",
@@ -145,6 +154,7 @@
       "rating": "5.0(87)"
     },
     {
+      "id": 10,
       "type": "powder",
       "name": "All Set To Go Translucent Powder",
       "price": "₹599.00",
@@ -161,6 +171,7 @@
       "rating": "4.8(512)"
     },
     {
+      "id": 11,
       "type": "powder",
       "name": "All Set To Go Banana Powder",
       "price": "₹599.00",
@@ -177,6 +188,7 @@
       "rating": "4.8(146)"
     },
     {
+      "id": 12,
       "type": "powder",
       "name": "Set The Tone Tinted Powder - 10 Latte (Light)",
       "price": "₹699.00",
@@ -193,6 +205,7 @@
       "rating": "4.2(946)"
     },
     {
+      "id": 13,
       "type": "compact",
       "name": "Dream Cover SPF15 Mattifying Compact - 10 Latte (light)",
       "price": "₹399.00",
@@ -209,15 +222,16 @@
       "rating": "4.7(224)"
     },
     {
+      "id": 14,
       "type": "compact",
       "name": "Powder Play Banana Compact",
       "price": "₹299.00",
       "actual_price": 299,
       "images": [
-       "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-powder-play-banana-compact-28122599424083.jpg?v=1619116314",
-       "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-powder-play-banana-compact-14285193117779.jpg?v=1619116316",
-       "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-powder-play-banana-compact-13731547218003.jpg?v=1643980466",
-       "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-powder-play-banana-compact-28122599489619.jpg?v=1619116321"
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-powder-play-banana-compact-28122599424083.jpg?v=1619116314",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-powder-play-banana-compact-14285193117779.jpg?v=1619116316",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-powder-play-banana-compact-13731547218003.jpg?v=1643980466",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-powder-play-banana-compact-28122599489619.jpg?v=1619116321"
       ],
       "feature": "Translucent Powder",
       "formulation": "Pressed Powder",
@@ -225,15 +239,16 @@
       "rating": "4.1(24)"
     },
     {
+      "id": 15,
       "type": "compact",
       "name": "Powder Play Translucent Compact",
       "price": "₹329.00",
       "actual_price": 329,
       "images": [
-       "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-powder-play-translucent-compact-28122598932563.jpg?v=1619116304",
-       "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-powder-play-translucent-compact-14285199310931.jpg?v=1619116307",
-       "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-powder-play-translucent-compact-13731550036051.jpg?v=1619116309",
-       "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-powder-play-translucent-compact-28122598965331.jpg?v=1619116312"
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-powder-play-translucent-compact-28122598932563.jpg?v=1619116304",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-powder-play-translucent-compact-14285199310931.jpg?v=1619116307",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-powder-play-translucent-compact-13731550036051.jpg?v=1619116309",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-powder-play-translucent-compact-28122598965331.jpg?v=1619116312"
       ],
       "feature": "Translucent Powder",
       "formulation": "Pressed Powder",
@@ -241,6 +256,7 @@
       "rating": "4.5(54)"
     },
     {
+      "id": 16,
       "type": "compact",
       "name": "Dream Cover SPF15 Mattifying Compact - 10 Latte (light)",
       "price": "₹399.00",
@@ -257,147 +273,158 @@
       "rating": "4.7(224)"
     },
     {
+      "id": 17,
       "type": "Foundations & Concealers",
       "name": "Ace Of Face Foundation Stick - 25 Macchiato (Light Medium, Olive Undertone) - 25 Macchiato (Light Medium Olive Undertone) ",
       "price": "₹999.00",
-      "actual_price":999 ,
+      "actual_price": 999,
       "images": [
         "https://cdn.shopify.com/s/files/1/0906/2558/products/1_8ed6a803-59c7-41dd-b798-b7837c92b69f.jpg?v=1640792718",
         "https://cdn.shopify.com/s/files/1/0906/2558/products/2_18188240-ab45-4079-b05b-c5112f0b93b3.jpg?v=1640869956",
         "https://cdn.shopify.com/s/files/1/0906/2558/products/7_1d181022-bd26-4c16-82e0-349aba006e2c.jpg?v=1655818307",
         "https://cdn.shopify.com/s/files/1/0906/2558/products/7_1d181022-bd26-4c16-82e0-349aba006e2c.jpg?v=1655818307"
       ],
-      "feature":"Face Foundation",
-      "formulation":"stick",
-      "concern":"Brightening",
+      "feature": "Face Foundation",
+      "formulation": "stick",
+      "concern": "Brightening",
       "rating": "3.7(224)"
-  },
-  {
-    "type": "Foundations & Concealers",
-    "name": "Rage For Coverage 24Hr Foundation - 07 Vanilla Latte ",
-    "price": "₹999.00",
-    "actual_price":659 ,
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-rage-for-coverage-24hr-foundation-07-vanilla-latte-fair-golden-undertone-28390674923603.jpg?v=1623073415",
-      "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-rage-for-coverage-24hr-foundation-07-vanilla-latte-fair-golden-undertone-28390674890835.jpg?v=1623073417",
-      "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-rage-for-coverage-24hr-foundation-07-vanilla-latte-fair-golden-undertone-28390873235539.jpg?v=1623071689",
-      "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-rage-for-coverage-24hr-foundation-07-vanilla-latte-fair-golden-undertone-28392387870803.jpg?v=1623073419"
-    ],
-    "feature":"Face Foundation",
-    "formulation":"stick",
-    "concern":"Brightening",
-    "rating": "3.9(204)"
-},
-{
-  "type": "Foundations & Concealers",
-  "name": "Drop The Base Serum Foundation - 32 Cortado ",
-  "price": "₹450.00",
-  "actual_price":450 ,
-  "images": [
-   "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-drop-the-base-serum-foundation-10-latte-light-warm-undertone-10965228388435.jpg?v=1619107903",
-   "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-drop-the-base-serum-foundation-10-latte-light-warm-undertone-10959780806739.jpg?v=1619107905",
-   "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-drop-the-base-serum-foundation-10-latte-light-warm-undertone-10959780806739.jpg?v=1619107905"
+    },
+    {
+      "id": 18,
+      "type": "Foundations & Concealers",
+      "name": "Rage For Coverage 24Hr Foundation - 07 Vanilla Latte ",
+      "price": "₹999.00",
+      "actual_price": 659,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-rage-for-coverage-24hr-foundation-07-vanilla-latte-fair-golden-undertone-28390674923603.jpg?v=1623073415",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-rage-for-coverage-24hr-foundation-07-vanilla-latte-fair-golden-undertone-28390674890835.jpg?v=1623073417",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-rage-for-coverage-24hr-foundation-07-vanilla-latte-fair-golden-undertone-28390873235539.jpg?v=1623071689",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-rage-for-coverage-24hr-foundation-07-vanilla-latte-fair-golden-undertone-28392387870803.jpg?v=1623073419"
+      ],
+      "feature": "Face Foundation",
+      "formulation": "stick",
+      "concern": "Brightening",
+      "rating": "3.9(204)"
+    },
+    {
+      "id": 19,
+      "type": "Foundations & Concealers",
+      "name": "Drop The Base Serum Foundation - 32 Cortado ",
+      "price": "₹450.00",
+      "actual_price": 450,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-drop-the-base-serum-foundation-10-latte-light-warm-undertone-10965228388435.jpg?v=1619107903",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-drop-the-base-serum-foundation-10-latte-light-warm-undertone-10959780806739.jpg?v=1619107905",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-drop-the-base-serum-foundation-10-latte-light-warm-undertone-10959780806739.jpg?v=1619107905"
+      ],
+      "feature": "Face Foundation",
+      "formulation": "stick",
+      "concern": "Brightening",
+      "rating": "4.8(20)"
+    },
+    {
+      "id": 20,
+      "type": "BB Cream",
+      "name": "Goddess Of Flawless SPF30+ BB Cream - 07 Vanilla Latte",
+      "price": "149.00",
+      "actual_price": 149,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-goddess-of-flawless-spf30-bb-cream-07-vanilla-latte-fair-12794189971539.jpg?v=1619114613",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-goddess-of-flawless-spf30-bb-cream-07-vanilla-latte-fair-12794189971539.jpg?v=1619114613",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-goddess-of-flawless-spf30-bb-cream-07-vanilla-latte-fair-14401666678867.jpg?v=1619114618",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-goddess-of-flawless-spf30-bb-cream-07-vanilla-latte-fair-12796404170835.jpg?v=1646226816"
+      ],
+      "feature": "stick",
+      "formulation": "stick",
+      "concern": "Brightening",
+      "rating": "4.7(87)"
+    },
+    {
+      "id": 21,
+      "type": "palette",
+      "name": "Contour De Force Face Palette - 01 Subtle Summit",
+      "price": "589.00",
+      "actual_price": 589,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/1_c36c9186-d377-4704-bd67-1a18d6e8541c.jpg?v=1639582576",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/6_832236c1-6949-4810-b015-0b366cc48f59.jpg?v=1657012482",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/7_be65a9a7-273a-4bcb-ab66-62e35a6dbbde.jpg?v=1657012482",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/3_8931efd5-56ed-4166-b472-78775e2fbcbb.jpg?v=1657012482"
+      ],
+      "formulation": "Pressed Powder",
+      "concern": "oil control",
+      "rating": "4.0(187)",
+      "feature": "stick"
+    },
+    {
+      "id": 22,
+      "type": "palette",
+      "name": "Contour De Force Eyes And Face Palette - 01 - Warm Win",
+      "price": "1099.00",
+      "actual_price": 1099,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/1_7cdc1fa6-fc3f-4cae-93c7-f940ff2da937.jpg?v=1657209586",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/3_24ebc645-031e-4544-ad8d-44c5373e7b1f.jpg?v=1657209588",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/7_8a9442d1-8017-41fa-8c95-df0ee030f46d.jpg?v=1657209590",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/7_8a9442d1-8017-41fa-8c95-df0ee030f46d.jpg?v=1657209590"
+      ],
+      "formulation": "Pressed Powder",
+      "concern": "oil control",
+      "rating": "5.0(9)",
+      "feature": "stick"
+    },
+    {
+      "id": 23,
+      "type": "palette",
+      "name": "Contour De Force Eyes And Face Palette 02 - Pink Pro",
+      "price": "1099.00",
+      "actual_price": 1099,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/1_13a304df-efca-4b67-aa0f-f97acd6869a3.jpg?v=1657209602",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/3_468fc7ba-ce75-4953-8262-e0f5b17f84c0.jpg?v=1657209605",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/7_51706214-61c3-41e8-baf6-e3f3325992a2.jpg?v=1657209607",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/4_e99c9e71-8d49-4a70-810f-29520abc9873.jpg?v=1657209610"
+      ],
+      "formulation": "Pressed Powder",
+      "concern": "oil control",
+      "rating": "4.8(900)",
+      "feature": "stick"
+    },
+    {
+      "id": 25,
+      "type": "value sets",
+      "name": "Lip Balm + Mini Liquid Lipstick",
+      "price": "360.00",
+      "actual_price": 360,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/09_1.jpg?v=1630597664",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/06_1.jpg?v=1630597666",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/06_1.jpg?v=1630597666"
+      ],
+      "formulation": "Liquid",
+      "concern": "Blurring",
+      "rating": "4.8(900)",
+      "feature": "stick"
+    },
+    {
+      "id": 26,
+      "type": "value sets",
+      "name": "Face Palette + Mini Liquid Lipstick value set",
+      "price": "849.00",
+      "actual_price": 849,
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/1.jpg?v=1646298577",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/3_7_a0feb20c-7955-4921-9218-c0f63c6ef84f.jpg?v=1646298577",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/2_11d7e12e-e31e-4d43-a358-4e87d0b10b86.jpg?v=1646322386",
+        "https://cdn.shopify.com/s/files/1/0906/2558/products/imagea.jpg?v=1646298581"
+      ],
+      "formulation": "Liquid",
+      "concern": "Blurring",
+      "rating": "4.9(28)",
+      "feature": "stick"
+    }
   ],
-  "feature":"Face Foundation",
-  "formulation":"stick",
-  "concern":"Brightening",
-  "rating": "4.8(20)"
-},
-{
-  "type": "BB Cream",
-  "name": "Goddess Of Flawless SPF30+ BB Cream - 07 Vanilla Latte",
-  "price": "149.00",
-  "actual_price":149,
-  "images": [
-   "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-goddess-of-flawless-spf30-bb-cream-07-vanilla-latte-fair-12794189971539.jpg?v=1619114613",
-   "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-goddess-of-flawless-spf30-bb-cream-07-vanilla-latte-fair-12794189971539.jpg?v=1619114613",
-   "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-goddess-of-flawless-spf30-bb-cream-07-vanilla-latte-fair-14401666678867.jpg?v=1619114618",
-   "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-goddess-of-flawless-spf30-bb-cream-07-vanilla-latte-fair-12796404170835.jpg?v=1646226816"
-  ],
-  "feature":"stick",
-  "formulation":"stick",
-  "concern":"Brightening",
-  "rating": "4.7(87)"
-},
-{
-  "type": "palette",
-  "name": "Contour De Force Face Palette - 01 Subtle Summit",
-  "price": "589.00",
-  "actual_price":589,
-  "images": [
-   "https://cdn.shopify.com/s/files/1/0906/2558/products/1_c36c9186-d377-4704-bd67-1a18d6e8541c.jpg?v=1639582576",
-   "https://cdn.shopify.com/s/files/1/0906/2558/products/6_832236c1-6949-4810-b015-0b366cc48f59.jpg?v=1657012482",
-   "https://cdn.shopify.com/s/files/1/0906/2558/products/7_be65a9a7-273a-4bcb-ab66-62e35a6dbbde.jpg?v=1657012482",
-   "https://cdn.shopify.com/s/files/1/0906/2558/products/3_8931efd5-56ed-4166-b472-78775e2fbcbb.jpg?v=1657012482"
-  ],
-  "formulation":"Pressed Powder",
-  "concern":"oil control",
-  "rating": "4.0(187)",
-  "feature":"stick"
-},
-{
-  "type": "palette",
-  "name": "Contour De Force Eyes And Face Palette - 01 - Warm Win",
-  "price": "1099.00",
-  "actual_price":1099,
-  "images": [
-   "https://cdn.shopify.com/s/files/1/0906/2558/products/1_7cdc1fa6-fc3f-4cae-93c7-f940ff2da937.jpg?v=1657209586",
-   "https://cdn.shopify.com/s/files/1/0906/2558/products/3_24ebc645-031e-4544-ad8d-44c5373e7b1f.jpg?v=1657209588",
-   "https://cdn.shopify.com/s/files/1/0906/2558/products/7_8a9442d1-8017-41fa-8c95-df0ee030f46d.jpg?v=1657209590",
-   "https://cdn.shopify.com/s/files/1/0906/2558/products/7_8a9442d1-8017-41fa-8c95-df0ee030f46d.jpg?v=1657209590"
-  ],
-  "formulation":"Pressed Powder",
-  "concern":"oil control",
-  "rating": "5.0(9)",
-  "feature":"stick"
-},
-{
-  "type": "palette",
-  "name": "Contour De Force Eyes And Face Palette 02 - Pink Pro",
-  "price": "1099.00",
-  "actual_price":1099,
-  "images": [
-  "https://cdn.shopify.com/s/files/1/0906/2558/products/1_13a304df-efca-4b67-aa0f-f97acd6869a3.jpg?v=1657209602",
-  "https://cdn.shopify.com/s/files/1/0906/2558/products/3_468fc7ba-ce75-4953-8262-e0f5b17f84c0.jpg?v=1657209605",
-  "https://cdn.shopify.com/s/files/1/0906/2558/products/7_51706214-61c3-41e8-baf6-e3f3325992a2.jpg?v=1657209607",
-  "https://cdn.shopify.com/s/files/1/0906/2558/products/4_e99c9e71-8d49-4a70-810f-29520abc9873.jpg?v=1657209610"
-  ],
-  "formulation":"Pressed Powder",
-  "concern":"oil control",
-  "rating": "4.8(900)",
-  "feature":"stick"
-},
-{
-  "type": "value sets",
-  "name": "Lip Balm + Mini Liquid Lipstick",
-  "price": "360.00",
-  "actual_price":360,
-  "images": [
-  "https://cdn.shopify.com/s/files/1/0906/2558/products/09_1.jpg?v=1630597664",
-  "https://cdn.shopify.com/s/files/1/0906/2558/products/06_1.jpg?v=1630597666",
-  "https://cdn.shopify.com/s/files/1/0906/2558/products/06_1.jpg?v=1630597666"
-  ],
-  "formulation":"Liquid",
-  "concern":"Blurring",
-  "rating": "4.8(900)",
-  "feature":"stick"
-},
-{
-  "type": "value sets",
-  "name": "Face Palette + Mini Liquid Lipstick value set",
-  "price": "849.00",
-  "actual_price":849,
-  "images": [
-  "https://cdn.shopify.com/s/files/1/0906/2558/products/1.jpg?v=1646298577",
-  "https://cdn.shopify.com/s/files/1/0906/2558/products/3_7_a0feb20c-7955-4921-9218-c0f63c6ef84f.jpg?v=1646298577",
-  "https://cdn.shopify.com/s/files/1/0906/2558/products/2_11d7e12e-e31e-4d43-a358-4e87d0b10b86.jpg?v=1646322386",
-  "https://cdn.shopify.com/s/files/1/0906/2558/products/imagea.jpg?v=1646298581"
-  ],
-  "formulation":"Liquid",
-  "concern":"Blurring",
-  "rating": "4.9(28)",
-  "feature":"stick"
-}
-  ],
-  "cart":[]
+  "cart": [
+   
+  ]
 }
