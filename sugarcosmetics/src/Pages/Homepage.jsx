@@ -2,11 +2,12 @@ import React from "react";
 
 import { Box, SimpleGrid, Image, Spacer } from "@chakra-ui/react";
 import ControlledCarousel, { Slider } from "../Components/Navbar/Slider";
-import Navbar from "../Components/Navbar/Navbar";
+import { Navbar } from "../Components/Navbar/Navbar";
 import Productslider from "../Components/Navbar/Productslider";
+import { Footer } from "../Components/Navbar/Footer";
 const Homepage = () => {
   return (
-    <Box>
+    <Box >
       <Navbar />
       <ControlledCarousel />
       <Productslider />
@@ -45,6 +46,7 @@ const Homepage = () => {
         <Spacer />
         <Productslider />
       </Box>
+      <Footer />
     </Box>
   );
 };

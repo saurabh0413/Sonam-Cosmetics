@@ -17,7 +17,7 @@ import {
 } from "@chakra-ui/react";
 import { ChevronDownIcon, HamburgerIcon } from "@chakra-ui/icons";
 import Cartbutton from "../Components/ProductsData/Cartbutton";
-import Navbar from "../Components/Navbar/Navbar";
+import { Navbar } from "../Components/Navbar/Navbar";
 
 const Singleproduct = () => {
   const getproduct = useParams();

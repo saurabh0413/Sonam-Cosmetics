@@ -29,8 +29,22 @@ const CartContext = ({ children }) => {
       dispatch(getCartDataRequest(res.data));
     });
   };
+  const updateCart = (val, id) => {
+    axios
+      .patch(`http://localhost:8080/cart/${id}`, { quantity: val })
+      .then((res) => {
+        getCartData();
+      });
+  };
+  const deleteCart = (id) => {
+    axios.delete(`http://localhost:8080/cart/${id}`).then((res) => {
+      getCartData();
+    });
+  };
   return (
-    <CartOne.Provider value={{ state, dispatch, addtoCart, getCartData }}>
+    <CartOne.Provider
+      value={{ state, dispatch, addtoCart, getCartData, updateCart ,deleteCart}}
+    >
       {children}
     </CartOne.Provider>
   );

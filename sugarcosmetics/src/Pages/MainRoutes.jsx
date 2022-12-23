@@ -1,10 +1,9 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Products from "../Components/ProductsData/Products";
-import Cart from "./Cart";
 import Homepage from "./Homepage";
 import Singleproduct from "./Singleproduct";
-
+import Cart from "./Cart"
 const MainRoutes = () => {
   return (
     <div>

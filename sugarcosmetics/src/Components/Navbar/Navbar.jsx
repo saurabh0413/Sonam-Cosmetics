@@ -14,7 +14,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import logo from "./logo.png";
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <Box w="100%">
       <Container maxW="100%" mx="auto" px={4} bg="black">
@@ -57,4 +57,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+

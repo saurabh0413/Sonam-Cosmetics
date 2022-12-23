@@ -3,7 +3,7 @@ import Filter from "./Filter";
 import ProductContent from "./ProductContent";
 import { Flex, Stack, Wrap } from "@chakra-ui/react";
 import styles from "./Products.module.css";
-import Navbar from "../Navbar/Navbar";
+import {Navbar} from "../Navbar/Navbar";
 const Products = () => {
   return (
     <div>
