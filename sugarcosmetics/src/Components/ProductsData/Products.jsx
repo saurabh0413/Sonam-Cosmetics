@@ -5,6 +5,7 @@ import { Flex, Stack, Wrap } from "@chakra-ui/react";
 import styles from "./Products.module.css";
 import {Navbar} from "../Navbar/Navbar";
 const Products = () => {
+  console.log("ue")
   return (
     <div>
       <Navbar />

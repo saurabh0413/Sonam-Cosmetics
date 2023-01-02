@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { ProdContext } from "../context/productContext";
@@ -18,18 +18,31 @@ import {
 import { ChevronDownIcon, HamburgerIcon } from "@chakra-ui/icons";
 import Cartbutton from "../Components/ProductsData/Cartbutton";
 import { Navbar } from "../Components/Navbar/Navbar";
+import axios from "axios";
 
 const Singleproduct = () => {
-  const getproduct = useParams();
-  console.log(getproduct.title);
-  const { state } = useContext(ProdContext);
-  const new_product = state.products.find(
-    (item) => item.name == getproduct.title
-  );
-  console.log(state.products);
-  console.log(new_product, "new");
+  const [data, setData] = useState({});
+  console.log(data);
+  const { id } = useParams();
+  const [centerimg, SetCenterimg] = useState("");
+  const [loading, setLoading] = useState(true);
 
-  const [centerimg, SetCenterimg] = useState(new_product.images[0]);
+  useEffect(() => {
+    axios
+      .get("https://sugarcosmetics.onrender.com/products/" + id)
+      .then((res) => {
+        setData(res.data);
+        SetCenterimg(res.data.images[0]);
+        setLoading(false);
+      });
+  }, [id]);
+  if (loading)
+    return (
+      <img
+        src="https://cdn.dribbble.com/users/31776/screenshots/754788/loading_cart.gif"
+        alt=""
+      />
+    );
   return (
     <Box>
       <Navbar />
@@ -42,7 +55,7 @@ const Singleproduct = () => {
       >
         <HStack spacing={10}>
           <VStack spacing={5}>
-            {new_product.images.map((img) => {
+            {data.images.map((img) => {
               return (
                 <Image w="50px" src={img} onClick={() => SetCenterimg(img)} />
               );
@@ -55,8 +68,8 @@ const Singleproduct = () => {
           spacing={{ base: "none", sm: 3, xl: 5 }}
           w={{ base: "100%", sm: "200px", md: "400px", xl: "500px" }}
         >
-          <Text>{new_product.name}</Text>
-          <Text>{new_product.price}</Text>
+          <Text>{data.name}</Text>
+          <Text>{data.price}</Text>
           <VStack align="revert-layer" spacing={5}>
             <Text>AVAILABLE OFFERS!!</Text>
             <Text overflow="hidden">

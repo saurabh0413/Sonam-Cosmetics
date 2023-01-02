@@ -39,19 +39,18 @@ export const Footer = () => {
             </Text>
           </Center>
           <Center>
-            <InputGroup>
-              <Input pr="28rem" placeholder="Entre your email" />
-              <InputRightElement width="4.5rem">
-                <Button
-                  color={"white"}
-                  bg={"black"}
-                  padding="-80px"
-                  marginLeft={"-30px"}
-                >
-                  SUBSCRIBE
-                </Button>
-              </InputRightElement>
-            </InputGroup>
+            <Box display="flex" alignItems="center" justifyContent="center">
+              <Input placeholder="Entre your email" borderRightRadius={0} />
+              <Button
+                color={"white"}
+                bg={"black"}
+                pl="50px"
+                pr="50px"
+                borderLeftRadius={0}
+              >
+                SUBSCRIBE
+              </Button>
+            </Box>
           </Center>
         </VStack>
       </Box>

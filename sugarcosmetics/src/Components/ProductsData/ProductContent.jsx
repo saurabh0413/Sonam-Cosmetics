@@ -20,17 +20,17 @@ const ProductContent = () => {
   const getData = async (queryParams) => {
     dispatch(productRequest());
     await axios
-      .get("http://localhost:8080/products", queryParams)
+      .get("https://sugarcosmetics.onrender.com/products", queryParams)
       .then((res) => {
         dispatch(productSuccess(res.data));
       })
       .catch(() => {
         dispatch(productFailure());
-      });
+      }); 
   };
-  // useEffect(() => {
-  //   getData();
-  // }, []);
+  useEffect(() => {
+    getData();
+  }, []);
   useEffect(() => {
     if (location || state.products.length == 0) {
       const sortBy = searchParams.get("sortBy");

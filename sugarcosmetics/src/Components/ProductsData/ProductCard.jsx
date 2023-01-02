@@ -10,7 +10,7 @@ const ProductCard = ({ data }) => {
   const { addtoCart } = useContext(CartOne);
   const navigate = useNavigate();
   const navigateSinglePage = () => {
-    navigate(`/products/${data.name}`);
+    navigate(`/products/${data.id}`);
   };
   return (
     <Box

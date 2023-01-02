@@ -13,7 +13,7 @@ const CartContext = ({ children }) => {
 
   const addtoCart = async (data) => {
     await axios
-      .post("http://localhost:8080/cart", data)
+      .post("https://sugarcosmetics.onrender.com/cart", data)
       .then((res) => {
         console.log("data added");
       })
@@ -25,19 +25,19 @@ const CartContext = ({ children }) => {
     getCartData();
   }, []);
   const getCartData = async () => {
-    await axios.get("http://localhost:8080/cart").then((res) => {
+    await axios.get("https://sugarcosmetics.onrender.com/cart").then((res) => {
       dispatch(getCartDataRequest(res.data));
     });
   };
   const updateCart = (val, id) => {
     axios
-      .patch(`http://localhost:8080/cart/${id}`, { quantity: val })
+      .patch(`https://sugarcosmetics.onrender.com/cart/${id}`, { quantity: val })
       .then((res) => {
         getCartData();
       });
   };
   const deleteCart = (id) => {
-    axios.delete(`http://localhost:8080/cart/${id}`).then((res) => {
+    axios.delete(`https://sugarcosmetics.onrender.com/cart/${id}`).then((res) => {
       getCartData();
     });
   };

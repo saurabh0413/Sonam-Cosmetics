@@ -1,34 +1,36 @@
+import { Image } from "@chakra-ui/react";
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
 const responsive = {
-  0: { items: 1 },
+  0: { items: 1},
   568: { items: 1 },
   1024: { items: 1 },
 };
 
 const items = [
   <div className="item" data-value="1">
-    <img
+    <Image
+    
       src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F8aea93d6-c525-49b1-8902-9ae553f3cd76.jpg&w=1920&q=75"
       alt=""
     />
   </div>,
   <div className="item" data-value="2">
-    <img
+    <Image
       src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F32ab9254-3291-4ac6-8a9c-1335d674d5db.jpg&w=1920&q=75"
       alt=""
     />
   </div>,
   <div className="item" data-value="3">
-    <img
+    <Image
       src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Fa7bfdf05-ad0e-4c24-ab48-7ff64e9115b8.jpg&w=1920&q=75"
       alt=""
     />
   </div>,
   <div className="item" data-value="4">
-    <img
+    <Image
       src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2Fe66cbd2d-fa4c-4375-af33-bb9d9f2b653d.jpg&w=1920&q=75"
       alt=""
     />
@@ -47,12 +49,12 @@ const Carousel = () => (
     items={items}
     responsive={responsive}
     controlsStrategy="alternate"
-    autoPlay
-    autoPlayStrategy="none"
-    autoPlayInterval={1000}
-    animationDuration={1000}
-    animationType="slide"
-    infinite
+    // autoPlay
+    // autoPlayStrategy="none"
+    // autoPlayInterval={1000}
+    // animationDuration={1000}
+    // animationType="slide"
+    // infinite
     touchTracking={false}
     disableButtonsControls
   />
