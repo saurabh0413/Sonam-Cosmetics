@@ -52,7 +52,7 @@ const ProductContent = () => {
         })}
       </SimpleGrid>
     </div>
-  );
+  );{}
 };
 
 export default ProductContent;

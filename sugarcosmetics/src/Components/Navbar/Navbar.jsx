@@ -28,9 +28,10 @@ export const Navbar = () => {
           <Input
             placeholder="Lipstick Liquid"
             maxW="39rem"
-            borderRadius="5px"
+             borderRadius="5px"
             borderColor="white"
             display={{ base: "none", md: "block" }}
+           
           />
 
           <HStack spacing={[3,10,10]}>
