@@ -7,7 +7,7 @@ import Productslider from "../Components/Navbar/Productslider";
 import { Footer } from "../Components/Navbar/Footer";
 const Homepage = () => {
   return (
-    <Box >
+    <Box>
       <Navbar />
       <ControlledCarousel />
       <Productslider />
@@ -27,7 +27,12 @@ const Homepage = () => {
           />
         </SimpleGrid>
         <Productslider />
-        <Image src="https://in.sugarcosmetics.com/_next/image?url=https://d32baadbbpueqt.cloudfront.net/Homepage/b16a42b1-3e35-42bb-b122-a517e75c490e.jpg&w=1920&q=75" />
+        <Image
+          src="https://in.sugarcosmetics.com/_next/image?url=https://d32baadbbpueqt.cloudfront.net/Homepage/b16a42b1-3e35-42bb-b122-a517e75c490e.jpg&w=1920&q=75"
+          m="auto"
+          borderRadius="20px"
+          mb="20px"
+        />
         <SimpleGrid spacing={5} columns={[1, 2, 2, 3]}>
           <img
             src="https://in.sugarcosmetics.com/_next/image?url=https%3A%2F%2Fd32baadbbpueqt.cloudfront.net%2FHomepage%2F4849cf44-c55c-4224-ba06-9dd0a5f48b67.gif&w=1920&q=75"

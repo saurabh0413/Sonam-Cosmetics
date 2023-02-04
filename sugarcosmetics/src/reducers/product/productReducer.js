@@ -7,7 +7,7 @@ export const initialData = {
 
 function ProductReducer(oldState = initialData, action) {
   const { type, payload } = action;
-
+     
   switch (type) {
     case types.Get_Data_Request:
       return {

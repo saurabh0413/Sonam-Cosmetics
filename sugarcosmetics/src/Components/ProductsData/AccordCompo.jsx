@@ -14,9 +14,11 @@ import {
   CheckboxGroup,
 } from "@chakra-ui/react";
 import Test from "./Test";
+import { ConstructionOutlined } from "@mui/icons-material";
 
 const AccordCompo = ({ item, handleChange, category }) => {
-  // console.log(category,"cat")
+  //  console.log(category,"cat")
+
   return (
     <div>
       {" "}
@@ -36,11 +38,12 @@ const AccordCompo = ({ item, handleChange, category }) => {
               direction={["column", "row"]}
               align="flex-start"
             >
-              {item.productType.map((item) => {
+              {item.productType.map((item1) => {
                 return (
                   <Test
-                    value={item}
-                    onChange={handleChange}
+                    key={item1.id}
+                    value={item1}
+                    onChange={()=>handleChange(item.productType[0],item1)}
                     category={category}
                   />
                 );

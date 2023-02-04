@@ -12,7 +12,7 @@ import {
   productRequest,
 } from "../../reducers/product/action";
 
-const ProductContent = () => {
+const ProductContent = ({ filterType }) => {
   const location = useLocation();
   const [searchParams] = useSearchParams();
   const { state, dispatch } = useContext(ProdContext);
@@ -23,10 +23,11 @@ const ProductContent = () => {
       .get("https://sugarcosmetics.onrender.com/products", queryParams)
       .then((res) => {
         dispatch(productSuccess(res.data));
+        console.log(res.data, "res");
       })
       .catch(() => {
         dispatch(productFailure());
-      }); 
+      });
   };
   useEffect(() => {
     getData();
@@ -36,23 +37,25 @@ const ProductContent = () => {
       const sortBy = searchParams.get("sortBy");
       const queryParams = {
         params: {
-          type: searchParams.getAll("type"),
+          [filterType]: searchParams.getAll(`${filterType}`),
           _sort: sortBy && "actual_price",
           _order: sortBy,
         },
       };
       getData(queryParams);
     }
-  }, [location.search]);
+  }, [location.search,filterType]);
   return (
     <div style={{ width: "70%" }}>
       <SimpleGrid spacing={5} columns={[1, 2, 2, 3]}>
         {state.products.map((item) => {
-          return <ProductCard data={item} />;
+          return <ProductCard data={item} key={item.id} />;
         })}
       </SimpleGrid>
     </div>
-  );{}
+  );
+  {
+  }
 };
 
 export default ProductContent;

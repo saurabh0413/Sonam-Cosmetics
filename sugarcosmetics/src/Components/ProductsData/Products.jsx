@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Filter from "./Filter";
 import ProductContent from "./ProductContent";
 import { Flex, Stack, Wrap } from "@chakra-ui/react";
 import styles from "./Products.module.css";
-import {Navbar} from "../Navbar/Navbar";
+import { Navbar } from "../Navbar/Navbar";
 const Products = () => {
-  console.log("ue")
+  const [filterType, setFilterType] = useState("type");
   return (
     <div>
       <Navbar />
@@ -16,7 +16,7 @@ const Products = () => {
           className={styles.img1}
         />
       </div> */}
- //base sm md lg xl 2xl
+      {/* base sm md lg xl 2xl */}
       <Stack
         justify="space-between"
         maxW="1400px"
@@ -24,8 +24,8 @@ const Products = () => {
         // direction={{ base: "column", md: "row" }} //
         direction="row"
       >
-        <Filter />
-        <ProductContent />
+        <Filter setFilterType={setFilterType} filterType={filterType} />
+        <ProductContent filterType={filterType} />
       </Stack>
     </div>
   );

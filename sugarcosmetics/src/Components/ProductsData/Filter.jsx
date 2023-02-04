@@ -14,11 +14,11 @@ import {
   CheckboxGroup,
 } from "@chakra-ui/react";
 import AccordCompo from "./AccordCompo";
-const Filter = () => {
+const Filter = ({ setFilterType, filterType }) => {
   const data = [
     {
       productType: [
-        "Product Type",
+        "type",
         "primers",
         "powder",
         "Translucent Powder",
@@ -35,7 +35,7 @@ const Filter = () => {
     },
     {
       productType: [
-        "Feature",
+        "feature",
         "primer",
         "Translucent Powder",
         "Face Foundation",
@@ -45,7 +45,7 @@ const Filter = () => {
     },
     {
       productType: [
-        "Formulation",
+        "formulation",
         "cream",
         "Loose Powder",
         "Pressed Powder",
@@ -55,7 +55,7 @@ const Filter = () => {
     },
     {
       productType: [
-        "Concern",
+        "concern",
         "Brightening",
         "oil control",
         "under eye",
@@ -64,13 +64,14 @@ const Filter = () => {
     },
   ];
   const [searchParams, setSearchParams] = useSearchParams();
-  const initialGenreparams = searchParams.getAll("type");
+  const initialGenreparams = searchParams.getAll(filterType);
   const initialSortparams = searchParams.get("sortBy");
   const [category, setCategory] = useState(initialGenreparams || []);
 
   const [sortBy, setSortBy] = useState(initialSortparams || "");
-  const handleChange = (e) => {
-    const checkedData = e.target.value;
+  const [prodType, setProdType] = useState(filterType);
+  const handleChange = (a, b) => {
+    const checkedData = b;//cream
     const new_category = [...category];
 
     if (category.includes(checkedData)) {
@@ -79,6 +80,8 @@ const Filter = () => {
       new_category.push(checkedData);
     }
     setCategory(new_category);
+    setProdType(a);
+    setFilterType(a);
   };
 
   const handleSort = (e) => {
@@ -87,14 +90,14 @@ const Filter = () => {
   useEffect(() => {
     if (category || sortBy) {
       const params = {};
-      category && (params.type = category);
+      category && (params[prodType] = category);
       sortBy && (params.sortBy = sortBy);
       setSearchParams(params);
     }
   }, [category, setSearchParams, sortBy]);
   return (
-    <Box minW="200px" w="300px" border="1px solid red" >
-      <Box   border="1px solid red">
+    <Box minW="200px" w="300px" border="1px solid red">
+      <Box border="1px solid red">
         <Accordion allowToggle>
           <AccordionItem>
             <h2>
@@ -137,7 +140,7 @@ const Filter = () => {
         </Accordion>
       </Box>
 
-      <Box ml={10} >
+      <Box ml={10}>
         <Accordion allowToggle>
           {data.map((item) => {
             return (
@@ -145,6 +148,7 @@ const Filter = () => {
                 item={item}
                 handleChange={handleChange}
                 category={category}
+                key={item}
               />
             );
           })}

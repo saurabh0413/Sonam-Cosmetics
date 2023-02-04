@@ -256,7 +256,7 @@ const Productslider = () => {
     <Box mt={10} mb={10} bg="#07025c" pt={10} pb={10} >
       <Slider {...settings}>
         {products.map((item) => {
-          return <ProductCard data={item} />;
+          return <ProductCard data={item} key={item.id} />;
         })}
       </Slider>
     </Box>
