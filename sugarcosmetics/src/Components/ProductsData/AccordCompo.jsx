@@ -25,30 +25,30 @@ const AccordCompo = ({ item, handleChange, category }) => {
       <AccordionItem>
         <h2>
           <AccordionButton>
-            <Box flex="1" textAslign="left">
+            <Box flex="1" textAlign="left">
               {item.productType[0]}
             </Box>
             <AccordionIcon />
           </AccordionButton>
         </h2>
-        <AccordionPanel pb={4}>
+        <AccordionPanel>
           <CheckboxGroup colorScheme="green">
-            <VStack
-              spacing={[1, 5]}
+            <Box
               direction={["column", "row"]}
               align="flex-start"
+             
             >
               {item.productType.map((item1) => {
                 return (
                   <Test
                     key={item1.id}
                     value={item1}
-                    onChange={()=>handleChange(item.productType[0],item1)}
+                    onChange={() => handleChange(item.productType[0], item1)}
                     category={category}
                   />
                 );
               })}
-            </VStack>
+            </Box>
           </CheckboxGroup>
         </AccordionPanel>
       </AccordionItem>

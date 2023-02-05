@@ -220,7 +220,7 @@ const Productslider = () => {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
 
@@ -228,16 +228,16 @@ const Productslider = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 1,
           infinite: true,
           dots: true,
         },
       },
       {
-        breakpoint: 700,
+        breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
           initialSlide: 2,
         },
@@ -247,13 +247,21 @@ const Productslider = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          arrows: false,
         },
       },
     ],
   };
 
   return (
-    <Box mt={10} mb={10} bg="#07025c" pt={10} pb={10} >
+    <Box
+      mt={10}
+      mb={10}
+      bg="#07025c"
+      pt={10}
+      pb={10}
+      ml={{ base: "-40px", md: "none" }}
+    >
       <Slider {...settings}>
         {products.map((item) => {
           return <ProductCard data={item} key={item.id} />;

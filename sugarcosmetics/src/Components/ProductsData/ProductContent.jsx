@@ -1,6 +1,6 @@
 import React from "react";
 import ProductCard from "./ProductCard";
-import { Grid, SimpleGrid, Wrap } from "@chakra-ui/react";
+import { Box, Grid, SimpleGrid, Wrap } from "@chakra-ui/react";
 import { useContext } from "react";
 import { ProdContext } from "../../context/productContext";
 import { useEffect } from "react";
@@ -44,15 +44,15 @@ const ProductContent = ({ filterType }) => {
       };
       getData(queryParams);
     }
-  }, [location.search,filterType]);
+  }, [location.search, filterType]);
   return (
-    <div style={{ width: "70%" }}>
-      <SimpleGrid spacing={5} columns={[1, 2, 2, 3]}>
+    <Box width={{ base: "100%", md: "70%" }}>
+      <SimpleGrid spacing="10px" columns={[1, 2, 2, 3]}>
         {state.products.map((item) => {
           return <ProductCard data={item} key={item.id} />;
         })}
       </SimpleGrid>
-    </div>
+    </Box>
   );
   {
   }

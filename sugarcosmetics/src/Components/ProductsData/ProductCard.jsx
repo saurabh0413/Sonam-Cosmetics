@@ -1,11 +1,19 @@
 import React from "react";
 
-import { Box, Image, Text, HStack } from "@chakra-ui/react";
-import { HamburgerIcon } from "@chakra-ui/icons";
-import Cartbutton from "./Cartbutton";
+import {
+  Box,
+  Image,
+  Text,
+  HStack,
+  IconButton,
+  Button,
+  VStack,
+} from "@chakra-ui/react";
+
 import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { CartOne } from "../../context/cartContext";
+import { BiHeart } from "react-icons/bi";
 const ProductCard = ({ data }) => {
   const { addtoCart } = useContext(CartOne);
   const navigate = useNavigate();
@@ -13,8 +21,8 @@ const ProductCard = ({ data }) => {
     navigate(`/products/${data.id}`);
   };
   return (
-    <Box
-      width="80%"
+    <VStack
+      width={{base:"100%",md:"90%"}}
       borderWidth="1px"
       borderRadius="lg"
       overflow="hidden"
@@ -22,6 +30,8 @@ const ProductCard = ({ data }) => {
       h="450px"
       shadow="0 2px 5px rgb(0 0 0 / 10%)"
       bg={"white"}
+      justify="center"
+      p={5}
     >
       <Image
         src={data.images[0]}
@@ -54,14 +64,25 @@ const ProductCard = ({ data }) => {
         <Text fontSize="md">{data.rating}</Text>
       </Box>
 
-      <Box>
-        <HStack spacing="60px">
-          <HamburgerIcon />
-          {/* <Cartbutton onClick={()=> addtoCart(data)}/> */}
-          <button onClick={() => addtoCart(data)}>Add to cart</button>
-        </HStack>
-      </Box>
-    </Box>
+      <HStack width="90%" alignSelf="center" spacing={5}>
+        <IconButton
+          variant="outline"
+          colorScheme="black"
+          aria-label="Send email"
+          icon={<BiHeart />}
+        />
+        {/* <Cartbutton onClick={()=> addtoCart(data)}/> */}
+        <Button
+          variant="solid"
+          colorScheme="blackAlpha"
+          bg="black"
+          w="full"
+          onClick={() => addtoCart(data)}
+        >
+          Add to cart
+        </Button>
+      </HStack>
+    </VStack>
   );
 };
 

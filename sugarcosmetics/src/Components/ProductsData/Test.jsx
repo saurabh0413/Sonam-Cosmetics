@@ -1,16 +1,18 @@
+import { Box, FormLabel } from "@chakra-ui/react";
+import { Label } from "@mui/icons-material";
 import React from "react";
 
 const Test = ({ value, onChange, category }) => {
   return (
-    <div>
+    <Box align="center" justify="start" display="flex">
       <input
         type="checkbox"
         value={value}
         defaultChecked={category.includes(value)}
         onChange={onChange}
       />
-      <label>{value}</label>
-    </div>
+      <label style={{ marginLeft: "10px" }}>{value}</label>
+    </Box>
   );
 };
 

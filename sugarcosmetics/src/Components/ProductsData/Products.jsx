@@ -23,6 +23,7 @@ const Products = () => {
         margin="auto"
         // direction={{ base: "column", md: "row" }} //
         direction="row"
+        
       >
         <Filter setFilterType={setFilterType} filterType={filterType} />
         <ProductContent filterType={filterType} />

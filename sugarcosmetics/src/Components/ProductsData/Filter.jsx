@@ -71,7 +71,7 @@ const Filter = ({ setFilterType, filterType }) => {
   const [sortBy, setSortBy] = useState(initialSortparams || "");
   const [prodType, setProdType] = useState(filterType);
   const handleChange = (a, b) => {
-    const checkedData = b;//cream
+    const checkedData = b; //cream
     const new_category = [...category];
 
     if (category.includes(checkedData)) {
@@ -96,10 +96,10 @@ const Filter = ({ setFilterType, filterType }) => {
     }
   }, [category, setSearchParams, sortBy]);
   return (
-    <Box minW="200px" w="300px" border="1px solid red">
-      <Box border="1px solid red">
+    <Box minW="200px" w="300px" height="fit-content" borderRadius="10px" display={{base:"none",md:"block"}}>
+      <Box>
         <Accordion allowToggle>
-          <AccordionItem>
+          <AccordionItem shadow="0 2px 5px rgb(0 0 0 / 10%)" bg={"white"} mb="30px">
             <h2>
               <AccordionButton>
                 <Box flex="1" textAlign="left">
@@ -140,8 +140,8 @@ const Filter = ({ setFilterType, filterType }) => {
         </Accordion>
       </Box>
 
-      <Box ml={10}>
-        <Accordion allowToggle>
+      <Box>
+        <Accordion allowToggle shadow="0 2px 5px rgb(0 0 0 / 10%)" bg={"white"}>
           {data.map((item) => {
             return (
               <AccordCompo
